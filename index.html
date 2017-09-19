@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+   <script data-require="angular.js@1.5.5" data-semver="1.4.9" src="https://code.angularjs.org/1.4.12/angular.js"></script>
+    <title>Tic Tac Toe AngularJS</title>
+  </head>
+
+  <body ng-app="TicTacToeApp">
+    <h1>TicTacToe</h1>
+    <div class="container gameboardcontainer" ng-controller="GameController">
+      <p class="declareWinner">{{(declareWinner == '')?'':declareWinner}}</p>
+      <p class="declareDraw">{{draw? 'drawn!!Play Again' : '' }}</p>
+      <div class="row" ng-repeat="row in gameboard">
+        <div ng-repeat="cell in row track by $index" ng-click="gameOver?'':playerMove(cell)" class="cell {{cell}}"></div>
+      </div>
+      <div class="cell whoseturn {{ (moveNumber % 2 == 0) ? 'o' : 'x' }}"></div>
+      <h3>   is up!</h3>
+      <div class="restart-btn" ng-click="reset()">New Game</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

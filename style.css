@@ -1,0 +1,76 @@
+body {
+    background-image: url('http://www.ctp.bilkent.edu.tr/~sibel/ctp106/wall.jpeg');
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gameboardcontainer {
+    margin: 40px auto 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.row {
+    width: 400px;
+    height: 130px;
+    margin: 2px auto 2px auto;
+}
+.cell {
+    width: 130px;
+    height: 130px;
+    background-color: lightgrey;
+    display: inline-block;
+    margin: 1px 1px 1px 1px;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: grey;
+}
+.x {
+    background-image: url('http://www.drodd.com/images15/red-x21.jpg');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: 75%;
+    cursor: auto;
+}
+.x:hover {
+    background-color: lightgray;
+}
+.o {
+    background-image: url('http://www.clipartsfree.net/vector/small/clipart-0123_Clipart_Free.png');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: 75%;
+    cursor: auto;
+}
+.o:hover {
+    background-color: lightgray;
+}
+.whoseturn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 25px 0 0 0;
+    display: inline-block;
+}
+h3 {
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: top;
+}
+.restart-btn {
+    width: 225px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 0 0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.restart-btn:hover {
+    background-color: lightgray;
+}
+.declareWinner {
+    font-weight: bold;
+    color:blue;
+}
